@@ -10,11 +10,11 @@ namespace RegexDemo
     internal class Patterns
     {
       //Regex Expression
-        public static string FirstName = "^[A-Z][a-z]{2,}$";
-        public static bool validateFirstName(string fName)
+        public static string LastName = "^[A-Z][a-z]{2,}$";
+        public static bool validateLastName(string lName)
         {
            
-            return Regex.IsMatch(fName,FirstName);
+            return Regex.IsMatch(lName,LastName);
 
         }
     }
