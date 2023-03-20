@@ -8,11 +8,11 @@ namespace RegexDemo
     {
         static void Main(string[] args)
 
-        {//UC2:-As a User need to enter a valid Last Name
-            Console.WriteLine("Enter LastName");
-            string lastName=Console.ReadLine();
+        {//UC2:-As a User need to enter a valid email address
+            Console.WriteLine("Enter Email");
+            string email=Console.ReadLine();
 
-            if (Patterns.validateLastName(lastName))
+            if (Patterns.validateLastName(email))
             {
                 Console.WriteLine("Valid");
             }
