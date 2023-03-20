@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Xml.Linq;
 using System;
+using System.Reflection;
 
 namespace RegexDemo
 {
@@ -8,11 +9,11 @@ namespace RegexDemo
     {
         static void Main(string[] args)
 
-        {//UC2:-As a User need to enter a valid email address
-            Console.WriteLine("Enter Email");
-            string email=Console.ReadLine();
+        {//UC4 As a User need tofollow predefinedMobile Format -E.g. 91 9919819801 - Country code follow by space
+            Console.WriteLine("Enter Mobile Number");
+            string mobile_no=Console.ReadLine();
 
-            if (Patterns.validateLastName(email))
+            if (Patterns.validateLastName(mobile_no))
             {
                 Console.WriteLine("Valid");
             }
