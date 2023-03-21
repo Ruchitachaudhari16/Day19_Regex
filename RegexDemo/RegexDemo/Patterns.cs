@@ -10,11 +10,11 @@ namespace RegexDemo
     internal class Patterns
     {
         //Regex Expression
-        public static string Mobile_Number = "^[+]?[0-9]{2}[ ][0-9]{10}$";
-        public static bool validateLastName(string mobile_num)
+        public static string Password = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%_])[a-zA-Z0-9!@#$%_]{8,}$";
+        public static bool validateLastName(string password)
         {
            
-            return Regex.IsMatch(mobile_num,Mobile_Number);
+            return Regex.IsMatch(password,Password);
 
         }
     }

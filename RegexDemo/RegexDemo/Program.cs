@@ -9,11 +9,14 @@ namespace RegexDemo
     {
         static void Main(string[] args)
 
-        {//UC4 As a User need tofollow predefinedMobile Format -E.g. 91 9919819801 - Country code follow by space
-            Console.WriteLine("Enter Mobile Number");
-            string mobile_no=Console.ReadLine();
+        {//UC5 As a User need to follow predefined Password rules.Rule1– minimum 8 Characters - NOTE – All rules must be passed
+         //UC6 Rule2– Should have at least 1Upper Case -NOTE – All rules must be passed
+         //UC7 Rule3– Shouldhave at least 1numeric number in the password -NOTE – All rules must be passed
+         //UC8 Rule4 – Has exactly1 Special Character -NOTE – All rules must be passed
+            Console.WriteLine("Enter Password");
+            string password=Console.ReadLine();
 
-            if (Patterns.validateLastName(mobile_no))
+            if (Patterns.validateLastName(password))
             {
                 Console.WriteLine("Valid");
             }
